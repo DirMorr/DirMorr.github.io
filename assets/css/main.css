@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #7001d1;
+		background-color: #935d8c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
@@ -206,7 +206,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 5em;
+		font-size: 2.5em;
 		line-height: 1.2;
 	}
 
@@ -3090,7 +3090,7 @@ input, select, textarea {
 		}
 
 			#header.alt h1 {
-				font-size: 7em;
+				font-size: 3.25em;
 			}
 
 			#header.alt > * {
