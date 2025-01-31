@@ -206,7 +206,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.5em;
+		font-size: 5em;
 		line-height: 1.2;
 	}
 
@@ -3090,7 +3090,7 @@ input, select, textarea {
 		}
 
 			#header.alt h1 {
-				font-size: 10em;
+				font-size: 3.25em;
 			}
 
 			#header.alt > * {
