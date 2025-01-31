@@ -2659,7 +2659,7 @@ input, select, textarea {
 				}
 
 		header.major p {
-			font-size: 4em;
+			font-size: 1.25em;
 			letter-spacing: -0.025em;
 		}
 
@@ -3090,7 +3090,7 @@ input, select, textarea {
 		}
 
 			#header.alt h1 {
-				font-size: 3.25em;
+				font-size: 10em;
 			}
 
 			#header.alt > * {
