@@ -1,0 +1,144 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('img1.jpeg'); /* Replace with your desired background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed while content scrolls */
+  color: #ffffff;
+  display: flex;
+  justify-content: center; /* Horizontally center the container */
+  align-items: center;     /* Vertically center the container */
+  min-height: 100vh;       /* Ensure body takes full height */
+  margin: 0;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+  border-radius: 10px; /* Rounded corners for the container */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding doesn’t affect width/height calculations */
+  flex-grow: 1; /* Ensures content grows to take available space */
+  margin-top: 25px;
+  margin-bottom: 25px; /* Space for footer */
+}
+
+/* Profile Section */
+.profile-section {
+  position: relative;
+  width: 100%;
+  height: 350px; /* Increased height for better spacing */
+  background-color: #4a4a4a; /* Light gray background for profile section */
+  border-bottom: 10px solid #ff4081;
+  margin-bottom: 30px;
+}
+
+.profile-background {
+  background-image: url('https://via.placeholder.com/900x350'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.profile-info {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.username {
+  margin-top: 15px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* Links Section */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333; /* Dark background for links section */
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.links p {
+  font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+}
+
+.link-button {
+  display: block;
+  background-color: #f9266c;
+  color: #fff;
+  padding: 15px 50px;
+  margin: 15px 0; /* Added more space between buttons */
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  width: 75%; /* Buttons will be half the width of the container */
+  max-width: 600px;
+  border: 3px solid #9a00a5;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.link-button:hover {
+  background-color: #e7376d;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Additional Section Below Links */
+.additional-section {
+  background-color: #333; /* Dark gray background for additional section */
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.additional-section p {
+  font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #222; /* Dark footer background */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
