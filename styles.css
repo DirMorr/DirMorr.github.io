@@ -93,7 +93,7 @@ body {
   font-size: 30px;
 }
 
-.link-button {
+.link-button a {
   display: block;
   background-color: #f9266c;
   color: #fff;
