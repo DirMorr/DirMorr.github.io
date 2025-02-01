@@ -23,8 +23,8 @@ body {
 
 .container {
   position: relative;
-  width: 80%;
-  max-width: 900px;
+  width: 90%;
+  max-width: 1500px;
   background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
   border-radius: 10px; /* Rounded corners for the container */
   padding: 20px;
@@ -38,6 +38,7 @@ body {
 .profile-section {
   position: relative;
   width: 100%;
+  border-radius: 10px; /* Rounded corners for the container */
   height: 350px; /* Increased height for better spacing */
   background-color: #4a4a4a; /* Light gray background for profile section */
   border-bottom: 10px solid #ff4081;
