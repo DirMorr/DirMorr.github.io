@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url('img1.jpeg'); /* Replace with your desired background image */
+  background-image: url('background.gif'); /* Replace with your desired background image */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Keeps the background fixed while content scrolls */
