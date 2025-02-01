@@ -5,9 +5,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'VHSfont'; /*a name to be used later*/
+  src: url('resource/VCR_OSD_MONO_1.001.ttf'); /*URL to font*/
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
-  background-image: url('background1.gif'); /* Replace with your desired background image */
+  font-family: 'VHSfont';
+  background-image: url('resource/background1.gif'); /* Replace with your desired background image */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Keeps the background fixed while content scrolls */
@@ -41,15 +46,15 @@ body {
   border-radius: 10px; /* Rounded corners for the container */
   height: 350px; /* Increased height for better spacing */
   background-color: #4a4a4a; /* Light gray background for profile section */
-  border-bottom: 10px solid #ff4081;
   margin-bottom: 30px;
 }
 
 .profile-background {
-  background-image: url('https://via.placeholder.com/900x350'); /* Replace with your background image */
+  background-image: url('resource/profBG.png'); /* Replace with your background image */
   background-size: cover;
   background-position: center;
   position: absolute;
+  border-radius: 10px;
   top: 0;
   left: 0;
   width: 100%;
@@ -68,13 +73,15 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: 5px solid #000000;
 }
 
 .username {
   margin-top: 15px;
   font-size: 50px;
   font-weight: 700;
+  color: #000000;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 /* Links Section */
@@ -88,7 +95,7 @@ body {
   margin-bottom: 30px;
 }
 
-.links p {
+.links h1 {
   font-weight: bold;
   color: #fff;
   font-size: 30px;
