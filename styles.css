@@ -95,7 +95,7 @@ body {
 
 .link-button  {
   display: block;
-  background-color: #f9266c;
+  background-color: #5b015e;
   color: #fff;
   padding: 15px 50px;
   margin: 15px 0; /* Added more space between buttons */
@@ -105,7 +105,7 @@ body {
   font-weight: bold;
   width: 75%; /* Buttons will be half the width of the container */
   max-width: 600px;
-  border: 3px solid #9a00a5;
+  border: 5px solid #ffffff;
   transition: background-color 0.3s, transform 0.3s;
 }
 
