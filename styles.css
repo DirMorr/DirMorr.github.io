@@ -99,15 +99,43 @@ body {
   font-weight: bold;
   color: #fff;
   font-size: 30px;
+  padding: 5px;
+}
+
+.links h2 {
+  font-weight: normal;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px;
+}
+
+/* Change the color of links */
+.links h2 a {
+  color: rgb(255, 255, 255);  /* You can use any color name, HEX, RGB, etc. */
+}
+
+/* Change the color of links when hovered */
+.links h2 a:hover {
+  color: red;  /* This will change the link color to red when hovered */
+}
+
+/* Change the color of links that have been visited */
+.links h2 a:visited {
+  color: rgb(255, 255, 255);  /* This will change the link color for visited links */
+}
+
+/* Change the color of active links (while clicked) */
+.links h2 a:active {
+  color: green;  /* This will change the link color when it is active */
 }
 
 .link-button  {
   display: block;
-  background-color: #5b015e;
+  background: linear-gradient(to bottom right, #7800e180, #ff0000bb, #ff00c3ad);
   color: #fff;
   padding: 15px 50px;
-  margin: 15px 0; /* Added more space between buttons */
-  border-radius: 30px;
+  margin: 10px 0; /* Added more space between buttons */
+  border-radius: 10px;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
@@ -118,9 +146,35 @@ body {
 }
 
 .link-button:hover {
-  background-color: #e7376d;
+  background: linear-gradient(to bottom right, #1100ffbb, #bf00ff80);
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
+
+/* Table Styles */
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 5px solid #ffffff;
+}
+
+th {
+  background-color: #000000;
+}
+
+td {
+  background-color: #00000085;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
 
 /* Additional Section Below Links */
 .additional-section {
