@@ -74,7 +74,14 @@ body {
   height: 150px;
   border-radius: 50%;
   border: 5px solid #000000;
+  visibility: visible;
 }
+
+.profile-button {
+  border-radius: 50%;
+  visibility: hidden;
+}
+
 
 .username {
   margin-top: 15px;
@@ -127,6 +134,73 @@ body {
 
 /* Change the color of active links (while clicked) */
 .links h2 a:active {
+  color: green;  /* This will change the link color when it is active */
+}
+
+.link-button  {
+  display: block;
+  background: linear-gradient(to bottom right, #7800e180, #ff0000bb, #ff00c3ad);
+  color: #fff;
+  padding: 15px 50px;
+  margin: 10px 0; /* Added more space between buttons */
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  width: 75%; /* Buttons will be half the width of the container */
+  max-width: 600px;
+  border: 5px solid #ffffff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.link-button:hover {
+  background: linear-gradient(to bottom right, #1100ffbb, #bf00ff80);
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Card Section */
+.card {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #444; /* Dark background for card section */
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 2px solid #ffffff;
+}
+
+.card h1 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.card h2 {
+  font-weight: normal;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px;
+}
+
+/* Change the color of card */
+.card h2 a {
+  color: rgb(255, 255, 255);  /* You can use any color name, HEX, RGB, etc. */
+}
+
+/* Change the color of card when hovered */
+.card h2 a:hover {
+  color: red;  /* This will change the link color to red when hovered */
+}
+
+/* Change the color of card that have been visited */
+.card h2 a:visited {
+  color: rgb(255, 255, 255);  /* This will change the link color for visited card */
+}
+
+/* Change the color of active card (while clicked) */
+.card h2 a:active {
   color: green;  /* This will change the link color when it is active */
 }
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>-DirMorr-</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,7 +13,9 @@
     <div class="profile-section">
       <div class="profile-background"></div>
       <div class="profile-info">
-        <img class="profile-image" src="resource/profIcon.png" alt="Profile Image">
+        <button class="profile-button" id="profBtn">
+          <img class="profile-image" src="resource/profIcon.png" alt="Profile Image">
+        </button>
         <p class="username">DirMorr</p>
       </div>
     </div>
@@ -33,13 +35,13 @@
         <a href="https://www.tumblr.com/blog/dirmorr" class="link-button">
           <i class="fab fa-tumblr"></i> Tumblr
         </a>
-        <a href="https://www.tumblr.com/blog/dirmorr" class="link-button">
+        <!--a href="https://www.tumblr.com/blog/dirmorr" class="link-button">
           <i class="fab fa-behance"></i> Behance
-        </a>
+        </a-->
       </div>
 
-    <!-- Additional Section Below Links -->
-    <div class="links">
+    <!-- Birthday Card Section -->
+    <div class="card" id="cardSec" style="display: none;">
       <h1>Buy a Birthday Card!</h1>
       <h2>For questions and inqueries email:</h2>
       <h2><a href="mailto:dirmorrcontact@gmail.com">DirMorrContact@gmail.com</a></h2>
@@ -76,8 +78,8 @@
 
   <!-- Footer Section -->
   <div class="footer">
-    <p>Hayden W Morrison</p>
+    <p>HWM</p>
   </div>
-
+  <script src="script.js"></script> 
 </body>
 </html>
