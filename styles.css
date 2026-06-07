@@ -230,6 +230,9 @@ body {
 /* ===== Artwork Cards ===== */
 
 .art-card {
+  background-color: rgba(0, 0, 0, 0.35);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
   padding: 20px;
 }
 
@@ -249,17 +252,6 @@ body {
 .art-card p {
   font-size: 20px;
   padding: 5px;
-}
-
-.art-image {
-  width: 100%;
-  max-width: 700px;
-  cursor: pointer;
-  transition: transform .2s;
-}
-
-.art-image:hover {
-  transform: scale(1.02);
 }
 
 /* ===== Lightbox ===== */
