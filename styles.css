@@ -91,6 +91,59 @@ body {
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
+/* Viewer Section */
+.view-selector {
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  margin-bottom: 30px;
+}
+
+.view-button {
+
+  font-family: 'VHSfont';
+
+  background: linear-gradient(to bottom right,
+      #7800e180,
+      #ff0000bb,
+      #ff00c3ad);
+
+  color: white;
+
+  border: 5px solid white;
+  border-radius: 10px;
+
+  padding: 15px 50px;
+
+  width: 300px;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: transform .3s;
+}
+
+.view-button:hover {
+
+  background: linear-gradient(to bottom right,
+      #1100ffbb,
+      #bf00ff80);
+
+  transform: scale(1.05);
+}
+
+.active-view {
+
+  background: linear-gradient(to bottom right,
+      #1100ffbb,
+      #bf00ff80);
+
+}
+
 /* Links Section */
 .links {
   display: flex;

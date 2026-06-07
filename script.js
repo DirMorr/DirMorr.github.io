@@ -1,15 +1,68 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Birthday card section toggle
     const profBtn = document.getElementById('profBtn');
-    const card = document.getElementById('cardSec');
 
-    profBtn.addEventListener('click', function () {
+    const linksBtn = document.getElementById('linksBtn');
+    const portfolioBtn = document.getElementById('portfolioBtn');
 
-        if (card.style.display === 'none') {
-            card.style.display = 'flex';
-        } else {
-            card.style.display = 'none';
+    const linksSec = document.getElementById('linksSec');
+    const portfolioSec = document.getElementById('portfolioSec');
+    const cardSec = document.getElementById('cardSec');
+
+    function clearViewButtons() {
+
+        document
+            .querySelectorAll(".view-button")
+            .forEach(btn => btn.classList.remove("active-view"));
+
+    }
+
+    // LINKS BUTTON
+    linksBtn.addEventListener("click", () => {
+
+        linksSec.style.display = "flex";
+        portfolioSec.style.display = "none";
+        cardSec.style.display = "none";
+
+        clearViewButtons();
+        linksBtn.classList.add("active-view");
+
+    });
+
+    // PORTFOLIO BUTTON
+    portfolioBtn.addEventListener("click", () => {
+
+        linksSec.style.display = "none";
+        portfolioSec.style.display = "flex";
+        cardSec.style.display = "none";
+
+        clearViewButtons();
+        portfolioBtn.classList.add("active-view");
+
+    });
+
+    // PROFILE IMAGE -> BIRTHDAY CARD
+    profBtn.addEventListener("click", () => {
+
+        linksSec.style.display = "none";
+        portfolioSec.style.display = "none";
+
+        if (cardSec.style.display === "flex") {
+
+            cardSec.style.display = "none";
+
+            linksSec.style.display = "flex";
+
+            clearViewButtons();
+            linksBtn.classList.add("active-view");
+
+        }
+        else {
+
+            cardSec.style.display = "flex";
+
+            clearViewButtons();
+
         }
 
     });
