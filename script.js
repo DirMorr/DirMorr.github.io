@@ -8,61 +8,69 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const linksBtn = document.getElementById('linksBtn');
     const portfolioBtn = document.getElementById('portfolioBtn');
+    const cardBtn = document.getElementById('cardBtn');
 
     const linksSec = document.getElementById('linksSec');
     const portfolioSec = document.getElementById('portfolioSec');
     const cardSec = document.getElementById('cardSec');
 
     function clearViewButtons() {
+
         document
             .querySelectorAll(".view-button")
             .forEach(btn => btn.classList.remove("active-view"));
+
     }
 
-    // Links page
-    linksBtn.addEventListener("click", () => {
+    function showSection(sectionToShow) {
 
-        linksSec.style.display = "flex";
+        linksSec.style.display = "none";
         portfolioSec.style.display = "none";
         cardSec.style.display = "none";
+
+        sectionToShow.style.display = "flex";
+
+    }
+
+    // Links
+    linksBtn.addEventListener("click", () => {
+
+        showSection(linksSec);
 
         clearViewButtons();
         linksBtn.classList.add("active-view");
 
     });
 
-    // Portfolio page
+    // Portfolio
     portfolioBtn.addEventListener("click", () => {
 
-        linksSec.style.display = "none";
-        portfolioSec.style.display = "flex";
-        cardSec.style.display = "none";
+        showSection(portfolioSec);
 
         clearViewButtons();
         portfolioBtn.classList.add("active-view");
 
     });
 
-    // Birthday Card page (profile picture)
+    // Birthday Cards
+    cardBtn.addEventListener("click", () => {
+
+        showSection(cardSec);
+
+        clearViewButtons();
+        cardBtn.classList.add("active-view");
+
+    });
+
+    // Profile picture reveals Birthday Cards button
     profBtn.addEventListener("click", () => {
 
-        linksSec.style.display = "none";
-        portfolioSec.style.display = "none";
+        cardBtn.style.display = "block";
 
-        if (cardSec.style.display === "flex") {
+        showSection(cardSec);
 
-            cardSec.style.display = "none";
-            linksSec.style.display = "flex";
-
-            clearViewButtons();
-            linksBtn.classList.add("active-view");
-
-        } else {
-
-            cardSec.style.display = "flex";
-            clearViewButtons();
-
-        }
+        clearViewButtons();
+        cardBtn.classList.add("active-view");
 
     });
 
