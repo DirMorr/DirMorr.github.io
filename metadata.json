@@ -1,5 +1,33 @@
 [
     {
+        "file": "pr_boys2.jpg",
+        "title": "The Boys Season 2 Poster Recreation",
+        "date": "",
+        "category": "PS Recreation",
+        "description": ""
+    },
+    {
+        "file": "pr_boys1.jpg",
+        "title": "The Boys Season 1 Poster Recreation",
+        "date": "",
+        "category": "PS Recreation",
+        "description": ""
+    },
+    {
+        "file": "pr_specialz.jpg",
+        "title": "SPECIALZ Album Cover Recreation",
+        "date": "",
+        "category": "PS Recreation",
+        "description": ""
+    },
+    {
+        "file": "pr_ft.jpg",
+        "title": "AoT Founding Titan Recreation",
+        "date": "",
+        "category": "PS Recreation",
+        "description": ""
+    },
+    {
         "file": "bm_jb.jpg",
         "title": "Juggling Balls OSRS Level Up",
         "date": "",
@@ -44,6 +72,13 @@
     {
         "file": "bc_dan.jpg",
         "title": "Shibuya Incident JJK Birthday Card",
+        "date": "",
+        "category": "Birthday Card",
+        "description": ""
+    },
+    {
+        "file": "bc_joel.jpg",
+        "title": "Talking Heads 'Remain in Light' Birthday Card",
         "date": "",
         "category": "Birthday Card",
         "description": ""
