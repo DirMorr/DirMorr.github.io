@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // ==========================
+    // Section Buttons
+    // ==========================
+
     const profBtn = document.getElementById('profBtn');
 
     const linksBtn = document.getElementById('linksBtn');
@@ -10,14 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const cardSec = document.getElementById('cardSec');
 
     function clearViewButtons() {
-
         document
             .querySelectorAll(".view-button")
             .forEach(btn => btn.classList.remove("active-view"));
-
     }
 
-    // LINKS BUTTON
+    // Links page
     linksBtn.addEventListener("click", () => {
 
         linksSec.style.display = "flex";
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    // PORTFOLIO BUTTON
+    // Portfolio page
     portfolioBtn.addEventListener("click", () => {
 
         linksSec.style.display = "none";
@@ -41,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    // PROFILE IMAGE -> BIRTHDAY CARD
+    // Birthday Card page (profile picture)
     profBtn.addEventListener("click", () => {
 
         linksSec.style.display = "none";
@@ -50,24 +52,24 @@ document.addEventListener('DOMContentLoaded', function () {
         if (cardSec.style.display === "flex") {
 
             cardSec.style.display = "none";
-
             linksSec.style.display = "flex";
 
             clearViewButtons();
             linksBtn.classList.add("active-view");
 
-        }
-        else {
+        } else {
 
             cardSec.style.display = "flex";
-
             clearViewButtons();
 
         }
 
     });
 
-    // Portfolio gallery
+    // ==========================
+    // Portfolio
+    // ==========================
+
     fetch("metadata.json")
         .then(response => response.json())
         .then(data => {
@@ -81,10 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 data.forEach(item => {
 
-                    if (
-                        selectedCategory !== "All Work" &&
-                        item.category !== selectedCategory
-                    ) {
+                    if (item.category !== selectedCategory) {
                         return;
                     }
 
@@ -92,9 +91,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     card.className = "art-card";
 
                     card.innerHTML = `
-                        <img class="art-image"
-                             src="gallery/${item.file}"
-                             data-full="gallery/${item.file}">
+                        <img
+                            class="art-image"
+                            src="gallery/${item.file}"
+                            data-full="gallery/${item.file}"
+                        >
 
                         <h2>${item.title}</h2>
                         <h3>${item.date}</h3>
@@ -109,11 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             }
 
-            // Build category buttons
-            const categories = [
-                "All Work",
-                ...new Set(data.map(item => item.category))
-            ];
+            // Create category buttons
+            const categories = [...new Set(data.map(item => item.category))];
 
             categories.forEach(category => {
 
@@ -140,13 +138,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
             });
 
-            tabs.firstChild.classList.add("active-category");
-            renderGallery("All Work");
+            // Default category
+            if (tabs.firstChild) {
+                tabs.firstChild.classList.add("active-category");
+                renderGallery(categories[0]);
+            }
 
         })
         .catch(error => console.error(error));
 
+    // ==========================
     // Lightbox
+    // ==========================
+
     function setupLightbox() {
 
         const images = document.querySelectorAll(".art-image");

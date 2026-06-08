@@ -268,65 +268,212 @@ body {
   background: linear-gradient(to bottom right, #1100ffbb, #bf00ff80);
 }
 
-/* ===== Gallery ===== */
+/* ========================= */
+/* Portfolio Section */
+/* ========================= */
 
-#gallery {
+.gallery-section {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  width: 100%;
-}
+  align-items: center;
 
-/* ===== Artwork Cards ===== */
-
-.art-card {
-  background-color: rgba(0, 0, 0, 0.35);
-  border: 2px solid #ffffff;
+  background-color: #444;
+  padding: 30px;
   border-radius: 10px;
-  padding: 20px;
+  margin-bottom: 30px;
+  border: 2px solid #ffffff;
 }
 
-.art-card h2 {
-  margin-top: 20px;
+.gallery-section h1 {
+  font-weight: bold;
+  color: #fff;
   font-size: 30px;
   padding: 5px;
 }
 
-.art-card h3 {
+/* ========================= */
+/* Category Buttons */
+/* ========================= */
+
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.category-button {
+
+  font-family: 'VHSfont';
+
+  background: linear-gradient(
+      to bottom right,
+      #7800e180,
+      #ff0000bb,
+      #ff00c3ad);
+
+  color: white;
+
+  border: 5px solid white;
+  border-radius: 10px;
+
+  padding: 15px 30px;
+
   font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background-color .3s, transform .3s;
+}
+
+.category-button:hover {
+
+  background: linear-gradient(
+      to bottom right,
+      #1100ffbb,
+      #bf00ff80);
+
+  transform: scale(1.05);
+}
+
+/* Selected button */
+
+.active-category {
+
+  background: linear-gradient(
+      to bottom right,
+      #1100ffbb,
+      #bf00ff80);
+
+}
+
+/* ========================= */
+/* Gallery */
+/* ========================= */
+
+#gallery {
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+
+  width: 100%;
+}
+
+/* ========================= */
+/* Individual Entries */
+/* ========================= */
+
+.art-card {
+
+  background-color: rgba(0,0,0,.35);
+
+  border: 2px solid white;
+  border-radius: 10px;
+
+  padding: 20px;
+
+  overflow: hidden;
+}
+
+/* Image stays inside the card */
+
+.art-image {
+
+  display: block;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  margin: 0 auto;
+
+  cursor: pointer;
+
+  transition: transform .2s;
+
+  border: none;
+  border-radius: 0;
+}
+
+.art-image:hover {
+
+  transform: scale(1.02);
+
+}
+
+.art-card h2 {
+
+  margin-top: 20px;
+
+  font-size: 30px;
+
   padding: 5px;
+}
+
+.art-card h3 {
+
+  font-size: 20px;
+
+  padding: 5px;
+
   color: #cccccc;
+
   font-weight: normal;
 }
 
 .art-card p {
+
   font-size: 20px;
+
   padding: 5px;
 }
 
-/* ===== Lightbox ===== */
+/* ========================= */
+/* Lightbox */
+/* ========================= */
 
 .lightbox {
+
   display: none;
+
   position: fixed;
   inset: 0;
+
   background: rgba(0,0,0,.9);
+
   justify-content: center;
   align-items: center;
+
   z-index: 9999;
 }
 
 .lightbox img {
+
   max-width: 90%;
   max-height: 90%;
 }
 
 #close-lightbox {
+
   position: absolute;
+
   top: 20px;
   right: 40px;
+
   color: white;
+
   font-size: 60px;
+
   cursor: pointer;
 }
 
