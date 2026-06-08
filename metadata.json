@@ -1,16 +1,72 @@
 [
     {
-        "file": "osrs_jb.png",
-        "title": "Sunset",
-        "date": "May 2026",
-        "category": "Blender Renders",
-        "description": "Custom birthday card design."
+        "file": "bm_jb.jpg",
+        "title": "Juggling Balls OSRS Level Up",
+        "date": "",
+        "category": "Bookmark",
+        "description": ""
     },
     {
-        "file": "osrs_uni.png",
-        "title": "Forest",
-        "date": "April 2026",
-        "category": "Blender Renders",
-        "description": "Commissioned illustration."
+        "file": "bm_uni.jpg",
+        "title": "Unicycle OSRS Level Up",
+        "date": "",
+        "category": "Bookmark",
+        "description": ""
+    },
+    {
+        "file": "bm_worm.jpg",
+        "title": "Vermiculture OSRS Level Up",
+        "date": "",
+        "category": "Bookmark",
+        "description": ""
+    },
+    {
+        "file": "bm_leather.jpg",
+        "title": "Leathermaking OSRS Level Up",
+        "date": "",
+        "category": "Bookmark",
+        "description": ""
+    },
+    {
+        "file": "bc_felix.jpg",
+        "title": "Nanami JJK Birthday Card",
+        "date": "",
+        "category": "Birthday Card",
+        "description": ""
+    },
+    {
+        "file": "bc_tristan.jpg",
+        "title": "Squid Game Season 2 Birthday Card",
+        "date": "",
+        "category": "Birthday Card",
+        "description": ""
+    },
+    {
+        "file": "bc_dan.jpg",
+        "title": "Shibuya Incident JJK Birthday Card",
+        "date": "",
+        "category": "Birthday Card",
+        "description": ""
+    },
+    {
+        "file": "bl_jb.jpg",
+        "title": "Juggling Balls Character 3D Render",
+        "date": "",
+        "category": "Blender",
+        "description": ""
+    },
+    {
+        "file": "bl_runic.jpg",
+        "title": "Runic Stones Character 3D Render",
+        "date": "",
+        "category": "Blender",
+        "description": ""
+    },
+    {
+        "file": "bl_donut.jpg",
+        "title": "Donut Tutorial 3D Render",
+        "date": "",
+        "category": "Blender",
+        "description": ""
     }
 ]
